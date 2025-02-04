@@ -100,28 +100,46 @@ Aufbau:
 
 
 ## 6. Arrays
-Arrays speichern mehrere Werte des gleichen Typs.
+Arrays speichern mehrere Werte des gleichen Typs und ermöglichen deren gezielte Nutzung über Indizes.
 
+### Deklaration und Initialisierung
 ```java
-int[] zahlen = {10, 20, 30, 40};
-println(zahlen[0]); // Ausgabe: 10
+int[] zahlen = {10, 20, 30, 40}; // Ein Array mit 4 Werten
+println(zahlen[0]); // Gibt den ersten Wert aus: 10
+```
 
+### Zugriff über Indizes
+Jedes Element in einem Array kann über seinen Index angesprochen werden. Die Indizes beginnen bei 0.
+```java
+int[] werte = {5, 10, 15, 20};
+println(werte[0]); // Zugriff auf das erste Element: 5
+println(werte[1]); // Zugriff auf das zweite Element: 10
+```
+
+### Array mit einer bestimmten Größe erstellen
+```java
+int[] daten = new int[5]; // Erstellt ein Array mit 5 Elementen
+```
+
+### Array-Werte mit einer Schleife durchlaufen
+```java
+int[] zahlen = {2, 4, 6, 8, 10};
 for (int i = 0; i < zahlen.length; i++) {
-  println(zahlen[i]);
+  println("Index " + i + ": " + zahlen[i]);
 }
 ```
-
 Dies gibt aus:
 ```
-10
-20
-30
-40
+Index 0: 2
+Index 1: 4
+Index 2: 6
+Index 3: 8
+Index 4: 10
 ```
 
-Man kann auch ein leeres Array erstellen und später Werte hinzufügen:
+### Werte im Array ändern
 ```java
-int[] werte = new int[5];
-werte[0] = 100;
-werte[1] = 200;
+int[] liste = {1, 2, 3, 4};
+liste[2] = 99; // Ändert das dritte Element (Index 2) auf 99
+println(liste[2]); // Gibt 99 aus
 ```
