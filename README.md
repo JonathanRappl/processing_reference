@@ -7,7 +7,7 @@ In Processing verwenden wir verschiedene Typen zum speichern von Daten. Hier sin
 ```java
 int meineZahl = 10;                 // Ganze Zahl (Integer)
 float meineKommazahl = 3.14;        // Fließkommazahl (Dezimalzahlen)
-boolean meinWert = true;            // Boolean (wahr/falsch)
+boolean meinWert = false;            // Boolean (wahr/falsch)
 char meinBuchstabe = 'A';           // Zeichen
 String meinText = "Hallo, Welt!";   // Zeichenkette (String)
 ```
@@ -20,10 +20,12 @@ int width;              // Breite des Zeichenfensters
 int height;             // Höhe des Zeichenfensters
 int mouseX;             // X-Koordinate der Maus
 int mouseY;             // Y-Koordinate der Maus
-int pmouseX;            // Vorherige X-Koordinate der Maus
-int pmouseY;            // Vorherige Y-Koordinate der Maus
 boolean mousePressed;   // Ob die Maustaste gedrückt ist
 boolean keyPressed;     // Ob eine Taste gedrückt ist
+
+// auch praktisch:
+random(x)               // 0-x
+random(x, y)            // x-y
 ```
 
 ## 2. Zeichenfunktionen
