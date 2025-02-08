@@ -60,7 +60,7 @@ void setup() {
 }
 
 void draw() {
-  // Code der sich immer wiederholen sollte.
+  // Code der sich immer wiederholen soll.
 }
 ```
 
