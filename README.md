@@ -49,6 +49,7 @@
 Processing-Programme bestehen aus zwei wichtigen Funktionen:
 
 **`setup()`**: Wird einmal zu Beginn des Programms aufgerufen. Hier werden die Grundeinstellungen vorgenommen, z. B. die Fenstergrösse.
+
 **`draw()`**: Wird immer wieder ausgeführt.
 
 ```java
