@@ -110,7 +110,7 @@ stroke(0, 255, 0);    // Grüne Linienfarbe
 ### Zeichenfunktionen
 ```java
 size(b, h);  
-// Setzt die Größe des Fensters.
+// Setzt die Grösse des Fensters.
 // int b: Die Breite des Fensters in Pixeln.
 // int h: Die Höhe des Fensters in Pixeln.
 
@@ -157,7 +157,7 @@ fill(r, g, b);
 random(min, max);  
 // Gibt eine zufällige Zahl zwischen `min` und `max` zurück.
 // float min: Der kleinste mögliche Wert.
-// float max: Der größte mögliche Wert.
+// float max: Der grösste mögliche Wert.
 
 sin(winkel);  
 // Gibt den Sinus des Winkels zurück.
@@ -168,7 +168,7 @@ sqrt(zahl);
 // float zahl: Die Zahl, deren Wurzel berechnet wird.
 
 max(a, b);  
-// Gibt das größere der beiden Argumente zurück.
+// Gibt das grössere der beiden Argumente zurück.
 // float a: Erste Zahl.
 // float b: Zweite Zahl.
 
@@ -345,7 +345,7 @@ void begruessen(String name) {
   println("Hallo, " + name + "!");
 }
 
-// Diese Funktion gibt eine Begrüßung aus, abhängig vom Parameter name.
+// Diese Funktion gibt eine Begrüssung aus, abhängig vom Parameter name.
 ```
 Aufruf der Funktion:
 ```java
@@ -396,7 +396,7 @@ println(zahlen[3]); // Gibt 4 aus
 ```
 ### Dynamische Erstellung eines Arrays
 
-Ein Array kann auch ohne direkte Werte erstellt werden. Dabei wird nur die Größe festgelegt:
+Ein Array kann auch ohne direkte Werte erstellt werden. Dabei wird nur die Grösse festgelegt:
 ```java
 int[] zahlen = new int[5]; // Erstellt ein Array mit 5 Plätzen (Standardwert: 0)
 zahlen[0] = 10;
