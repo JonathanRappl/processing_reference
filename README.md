@@ -149,6 +149,9 @@ stroke(r, g, b);
 fill(r, g, b);  
 // Setzt die Füllfarbe für nachfolgende Formen.
 // int r, g, b: Die RGB-Werte (0-255) für die Füllfarbe.
+
+text(m, x, y);
+// Zeigt Nachricht m (String) an position x, y (int) an. 
 ```
 
 
