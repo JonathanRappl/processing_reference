@@ -454,3 +454,16 @@ for (int i = 0; i < zahlen.length; i++) {
 
 // Hier wird das Array von 0 bis zahlen.length - 1 durchlaufen und alle Werte ausgegeben.
 ```
+### Zufälligen Index aus einem Array wählen
+
+Ein zufälliges Element kann aus einem Array ausgewählt werden, indem ein zufälliger Index erzeugt wird:
+
+```java
+int zufallsIndex = int(random(zahlen.length));
+int zufallsWert = zahlen[zufallsIndex];
+println("Zufällig gewähltes Element: " + zufallsWert);
+
+// `random(zahlen.length)` gibt eine Zufallszahl zwischen `0` und `zahlen.length - 1` zurück.  
+// `int(random(...))` wandelt den Wert in eine ganze Zahl um.  
+// Der zufällige Index wird verwendet, um ein Element aus dem Array auszuwählen.
+```
