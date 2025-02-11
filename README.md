@@ -31,6 +31,7 @@
    - [Dynamische Erstellung eines Arrays](#dynamische-erstellung-eines-arrays)  
    - [Array-Länge abrufen](#array-länge-abrufen)  
    - [Durchlaufen eines Arrays](#durchlaufen-eines-arrays-mit-einer-for-schleife)  
+   - [Zufälligen Index aus einem Array wählen](#zufälligen-index-aus-einem-array-wählen)  
 
 ## Umgebung
 
