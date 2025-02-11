@@ -9,6 +9,7 @@
 
 2. [Vordefinierte Funktionen und Variablen](#vordefinierte-funktionen-und-variablen)  
    - [Zeichenfunktionen](#zeichenfunktionen)  
+   - [Textfunktionen](#textfunktionen)  
    - [Weitere Funktionen](#weitere-funktionen)  
    - [Vordefinierte Variablen](#variablen)  
 
