@@ -148,13 +148,38 @@ stroke(r, g, b);
 
 fill(r, g, b);  
 // Setzt die Füllfarbe für nachfolgende Formen.
-// int r, g, b: Die RGB-Werte (0-255) für die Füllfarbe.
+// int r, g, b: Die RGB-Werte (0-255) für die Füllfarbe. 
+```
+### Textfunktionen  
+```java
+text(m, x, y);  
+// Zeichnet den Text m an der angegebenen Position.  
+// String m: Der anzuzeigende Text.  
+// int x: Die X-Koordinate der Textposition.  
+// int y: Die Y-Koordinate der Textposition.  
 
-text(m, x, y);
-// Zeigt Nachricht m (String) an position x, y (int) an. 
+textSize(s);  
+// Setzt die Schriftgröße für den Text.  
+// int s: Die Größe der Schrift in Pixeln.  
+
+textAlign(a);  
+// Legt die horizontale Ausrichtung des Textes fest.  
+// int a: Eine der folgenden Konstanten: LEFT, CENTER oder RIGHT.  
+
+textAlign(a, b);  
+// Legt sowohl die horizontale als auch die vertikale Ausrichtung des Textes fest.  
+// int a: Horizontale Ausrichtung: LEFT, CENTER oder RIGHT.  
+// int b: Vertikale Ausrichtung: TOP, CENTER oder BOTTOM.  
 ```
 
+Beispiel: 
+```java
+textSize(32);
+textAlign(CENTER, CENTER);
+text("Hallo, Welt!", width / 2, height / 2);
 
+// Hier wird der Text "Hallo, Welt!" in der Mitte des Fensters zentriert dargestellt.
+```
 ### Weitere Funktionen
 ```java
 random(min, max);  
