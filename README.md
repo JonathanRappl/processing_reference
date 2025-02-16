@@ -212,6 +212,13 @@ constrain(wert, min, max);
 // float wert: Der zu überprüfende Wert.
 // float min: Die untere Grenze.
 // float max: Die obere Grenze.
+
+dist(x1, y1, x2, y2);  
+// Berechnet die Distanz zwischen zwei Punkten.
+// float x1: X-Koordinate des ersten Punktes.  
+// float y1: Y-Koordinate des ersten Punktes.  
+// float x2: X-Koordinate des zweiten Punktes.  
+// float y2: Y-Koordinate des zweiten Punktes.
 ```
 ### Variablen
 
