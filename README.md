@@ -161,8 +161,8 @@ text(m, x, y);
 // int y: Die Y-Koordinate der Textposition.  
 
 textSize(s);  
-// Setzt die Schriftgröße für den Text.  
-// int s: Die Größe der Schrift in Pixeln.  
+// Setzt die Schriftgrösse für den Text.  
+// int s: Die Grösse der Schrift in Pixeln.  
 
 textAlign(a);  
 // Legt die horizontale Ausrichtung des Textes fest.  
@@ -475,3 +475,99 @@ println("Zufällig gewähltes Element: " + zufallsWert);
 // `int(random(...))` wandelt den Wert in eine ganze Zahl um.  
 // Der zufällige Index wird verwendet, um ein Element aus dem Array auszuwählen.
 ```
+
+
+## Benutzerdefinierte Klassen
+
+### Warum Klassen?
+Klassen sind eine Möglichkeit, eigene Datentypen zu erstellen. Sie ermöglichen es, Daten und zugehörige Funktionen (Methoden) zusammenzufassen.  
+Statt mehrere Variablen zu verwalten, kann man ein Objekt erstellen, das alle benötigten Werte speichert.
+
+### Eine einfache Klasse definieren
+
+Eine Klasse wird mit dem `class`-Schlüsselwort definiert.  
+Innerhalb der Klasse werden Variablen und eine `constructor`-Methode (`setup`-ähnlich) verwendet.
+
+```java
+class Ball {
+  // Variablen der Klasse (Attribute):
+  float x, y;     // Position
+  float vx, vy;   // Geschwindigkeit
+
+  // constructor-Methode, Sie muss den gleichen Namen haben wie die Klasse selbst.
+  Ball(float startX, float startY) {
+    x = startX;
+    y = startY;
+    vx = random(-2, 2);
+    vy = random(-2, 2);
+  }
+
+  // Zwei Funktionen der Klasse (Methoden) um mit der Klasse zu interagieren.
+  void move() {
+    x += vx;
+    y += vy;
+  }
+
+  void display() {
+    ellipse(x, y, 20, 20);
+  }
+}
+```
+
+### Methoden in Klassen
+
+Methoden sind Funktionen innerhalb einer Klasse, die für das Objekt arbeiten.  
+Die Methoden `move()` und `display()` im obigen Beispiel lassen den Ball sich bewegen und zeichnen ihn.
+
+### Mehrere Objekte erstellen
+
+Mit einer Klasse können beliebig viele Objekte erzeugt werden.
+
+```java
+Ball ball1;
+Ball ball2;
+
+void setup() {
+  size(400, 400);
+  ball1 = new Ball(100, 100);
+  ball2 = new Ball(200, 200);
+}
+
+void draw() {
+  background(220);
+  
+  ball1.move();
+  ball1.display();
+  
+  ball2.move();
+  ball2.display();
+}
+```
+
+Hier werden zwei Objekte der Klasse `Ball` erstellt, die sich unabhängig voneinander bewegen.
+
+
+### Ein Array von Objekten erstellen
+
+Anstatt einzelne Ball-Objekte zu verwalten, können wir ein Array von Bällen erstellen:
+
+```java
+Ball[] balls = new Ball[10];
+
+void setup() {
+  size(400, 400);
+  for (int i = 0; i < balls.length; i++) {
+    balls[i] = new Ball(random(width), random(height));
+  }
+}
+
+void draw() {
+  background(220);
+  for (int i = 0; i < balls.length; i++) {
+    balls[i].move();
+    balls[i].display();
+  }
+}
+```
+
+Hier erstellen wir ein Array mit 10 Ball-Objekten, die zufällig positioniert werden. Jeder Ball bewegt sich unabhängig und wird in der `draw()`-Methode aktualisiert und gezeichnet.
