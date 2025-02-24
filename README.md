@@ -33,6 +33,13 @@
    - [Durchlaufen eines Arrays](#durchlaufen-eines-arrays-mit-einer-for-schleife)  
    - [Zufälligen Index aus einem Array wählen](#zufälligen-index-aus-einem-array-wählen)  
 
+7. [Benutzerdefinierte Klassen](#benutzerdefinierte-klassen)  
+   - [Warum Klassen?](#warum-klassen)  
+   - [Eine einfache Klasse definieren](#eine-einfache-klasse-definieren)  
+   - [Methoden in Klassen](#methoden-in-klassen)  
+   - [Mehrere Objekte erstellen](#mehrere-objekte-erstellen)  
+   - [Ein Array von Objekten erstellen](#ein-array-von-objekten-erstellen)  
+
 ## Umgebung
 
 ### Koordinatensystem
